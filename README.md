@@ -16,4 +16,5 @@ If you want to have a go at BlockBreak follow these 3 simple steps:
 4) Have fun and break the blocks!
 
 # License
-BlockBreak: Java Edition was released under the [MIT License](https://github.com/LucaDiBlasio/BlockBreak/blob/2ba85518ccd804512116a0d5c76dd0ec6eeb1191/LICENSE)
+BlockBreak: Java Edition was released under the [MIT License].(https://github.com/LucaDiBlasio/BlockBreak/blob/2ba85518ccd804512116a0d5c76dd0ec6eeb1191/LICENSE)
+Every user can feel free to modify my code or the whole project for educational purposes.
