@@ -6,7 +6,7 @@ import java.util.Random;
 public class Ball extends Rectangle
 {
     Random rnd;
-    double ballSpeed=3.5;
+    double ballSpeed=4.0;
     double dX;
     double dY;
     int vectorX;

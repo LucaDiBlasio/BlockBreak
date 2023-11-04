@@ -17,7 +17,7 @@ public class GameScreen extends JPanel implements Runnable
     static final int BALL_DIAMETER=12;
 
     static final int rows = 17;
-    static final int columns=9;
+    static final int columns=8;
 
     static final int blockWidth=32;
     static final int blockHeight=12;
@@ -107,7 +107,7 @@ public class GameScreen extends JPanel implements Runnable
         {
             String gameOver = "GAME OVER";
             String backToStart = "Press R to Restart or E to exit the game";
-            graphics.setFont(new Font("Times New Roman",Font.ITALIC | Font.BOLD,72));
+            graphics.setFont(new Font("Arial",Font.ITALIC | Font.BOLD,72));
             graphics.setColor(Color.red);
             graphics.drawString(gameOver,(GAME_WIDTH/7)-10,(GAME_HEIGHT/2));
             graphics.setFont(new Font("Times New Roman",Font.BOLD,15));
@@ -119,7 +119,7 @@ public class GameScreen extends JPanel implements Runnable
         {
             String win = "YOU WIN";
             String backToStart = "Press R to Restart or E to exit the game";
-            graphics.setFont(new Font("Times New Roman",Font.ITALIC | Font.BOLD,72));
+            graphics.setFont(new Font("Arial",Font.ITALIC | Font.BOLD,72));
             graphics.setColor(Color.red);
             graphics.drawString(win,(GAME_WIDTH/5)+18,(GAME_HEIGHT/2)-15);
             graphics.setFont(new Font("Times New Roman",Font.BOLD,15));

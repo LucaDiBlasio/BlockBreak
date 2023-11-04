@@ -35,27 +35,108 @@ public class Blocks extends Rectangle
     }
     public void draw(Graphics gr)
     {
-        Random rnd=new Random();
-        int colorSelect= rnd.nextInt(4);
-
-        switch(colorSelect)
+        if (this.row==0 || this.row%4==0)
         {
-            case 0:
-                gr.setColor(Color.blue);
-                break;
-            case 1:
-                gr.setColor(Color.red);
-                break;
-            case 2:
-                gr.setColor(Color.yellow);
-                break;
-            case 3:
+            if(this.column%4==0)
+            {
                 gr.setColor(Color.green);
-                break;
-            default:
-                gr.setColor(Color.cyan);
-                break;
+            }
+            else
+            {
+                if(this.column%4==1)
+                {
+                    gr.setColor(Color.yellow);
+                }
+                else
+                {
+                    if(this.column%2==0)
+                    {
+                        gr.setColor(Color.red);
+                    }
+                    else
+                    {
+                        gr.setColor(Color.blue);
+                    }
+                }
+            }
+
         }
+        if(this.row==1||this.row%4==1)
+        {
+            if(this.column%4==0)
+            {
+                gr.setColor(Color.yellow);
+            }
+            else
+            {
+                if(this.column%4==1)
+                {
+                    gr.setColor(Color.red);
+                }
+                else
+                {
+                    if(this.column%2==0)
+                    {
+                        gr.setColor(Color.blue);
+                    }
+                    else
+                    {
+                        gr.setColor(Color.green);
+                    }
+                }
+            }
+        }
+        if(this.row==2||this.row%4==2)
+        {
+            if(this.column%4==0)
+            {
+                gr.setColor(Color.blue);
+            }
+            else
+            {
+                if(this.column%4==1)
+                {
+                    gr.setColor(Color.green);
+                }
+                else
+                {
+                    if(this.column%2==0)
+                    {
+                        gr.setColor(Color.yellow);
+                    }
+                    else
+                    {
+                        gr.setColor(Color.red);
+                    }
+                }
+            }
+        }
+        if(this.row==3||this.row%4==3)
+        {
+            if(this.column%4==0)
+            {
+                gr.setColor(Color.red);
+            }
+            else
+            {
+                if(this.column%4==1)
+                {
+                    gr.setColor(Color.blue);
+                }
+                else
+                {
+                    if(this.column%2==0)
+                    {
+                        gr.setColor(Color.green);
+                    }
+                    else
+                    {
+                        gr.setColor(Color.yellow);
+                    }
+                }
+            }
+        }
+
         gr.fillRect(x,y,width,height);
     }
 
